@@ -1,10 +1,9 @@
 import { assert, expect } from 'chai';
-import { spec, NATIVE_ASSETS } from 'modules/airBidAdapter.js';
+import { NATIVE_ASSETS, spec } from 'modules/senaevBidAdapter.js';
 import { parseUrl } from 'src/utils.js';
 import { BANNER, NATIVE } from '../../../src/mediaTypes';
-import { OPENRTB } from '../../../modules/rtbhouseBidAdapter';
 
-describe('Air adapter', function () {
+describe('Senaev adapter', function () {
   describe('isBidRequestValid', function () {
     it('should return true when required params found', function () {
       const bid = getBidRequest();
@@ -74,7 +73,7 @@ describe('Air adapter', function () {
       const parsedRequestUrl = parseUrl(url);
       const { search: query } = parsedRequestUrl
 
-      expect(parsedRequestUrl.hostname).to.equal('air.tech');
+      expect(parsedRequestUrl.hostname).to.equal('senaev.com');
       expect(parsedRequestUrl.pathname).to.equal('/ads/prebid/123');
 
       expect(query['imp-id']).to.equal('1');
@@ -429,7 +428,7 @@ describe('Air adapter', function () {
 
 function getBidConfig() {
   return {
-    bidder: 'air',
+    bidder: 'senaev',
     params: {
       placementId: '123-1',
     },

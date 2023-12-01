@@ -1,1 +1,5 @@
-["yandexBidAdapter", "airBidAdapter"]
+[
+    "yandexBidAdapter",
+    "senaevBidAdapter",
+    "topicsFpdModule"
+]

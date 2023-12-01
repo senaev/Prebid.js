@@ -1,14 +1,14 @@
 # Overview
 
 ```
-Module Name: Air Bidder Adapter
+Module Name: Senaev Bidder Adapter
 Module Type: Bidder Adapter
-Maintainer: prebid@air.tech
+Maintainer: gsacryfice@gmail.com
 ```
 
 # Description
 
-Air Bidder Adapter for Prebid.js.
+Senaev Bidder Adapter for Prebid.js.
 
 # Parameters
 
@@ -35,7 +35,7 @@ var adUnits = [
     },
     bids: [
       {
-        bidder: "air",
+        bidder: "senaev",
         params: {
           placementId: "346580-1",
         },
@@ -71,7 +71,7 @@ var adUnits = [
     },
     bids: [
       {
-        bidder: "air",
+        bidder: "senaev",
         params: {
           placementId: "346580-1",
         },
