@@ -1,10 +1,10 @@
-import { formatQS, deepAccess, triggerPixel, _each, _map } from '../src/utils.js';
 import { registerBidder } from '../src/adapters/bidderFactory.js';
-import { BANNER, NATIVE } from '../src/mediaTypes.js'
+import { BANNER, NATIVE } from '../src/mediaTypes.js';
 import { convertOrtbRequestToProprietaryNative } from '../src/native.js';
+import { _each, _map, deepAccess, formatQS, triggerPixel } from '../src/utils.js';
 
-const BIDDER_CODE = 'air';
-const BIDDER_URL = 'https://air.tech/ads/prebid';
+const BIDDER_CODE = 'senaev';
+const BIDDER_URL = 'https://senaev.com/ads/prebid';
 const DEFAULT_TTL = 180;
 const DEFAULT_CURRENCY = 'EUR';
 const SUPPORTED_MEDIA_TYPES = [BANNER, NATIVE];
